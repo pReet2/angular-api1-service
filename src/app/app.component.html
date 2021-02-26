@@ -1,0 +1,21 @@
+<!-- <button (click)="getPosts()">fetch api</button>
+<button (click)="createPost()">Create Post</button>
+<button (click)="updatePost()">update Post</button>
+<button (click)="deletePost()">delete Post</button>
+
+{{ newPost | async | json }} -->
+
+<p>{{objPuts.id}}</p>
+<p>{{objPuts.title}}</p>
+<p>{{objPuts.body}}</p>
+
+<p>{{objPatch.id}}</p>
+<p>{{objPatch.title}}</p>
+<p>{{objPatch.body}}</p>
+<p>{{message}}</p>
+
+<ul>
+  <li *ngFor="let post of data">
+    {{post | json}}
+  </li>
+</ul>
